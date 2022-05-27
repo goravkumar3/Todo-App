@@ -67,5 +67,6 @@ function add() {
       // currInput.value=currInputText;
       // edit.parentElement.replaceChild(currInput,edit.previousElementSibling);
     });
+    input.value="";
   }
 }
