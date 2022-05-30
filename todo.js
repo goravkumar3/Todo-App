@@ -53,20 +53,16 @@ function add() {
     out.appendChild(outText);
     list.appendChild(edit);
     list.append(del);
+    //delete function
     del.addEventListener("click", function () {
       this.parentNode.remove();
     });
+    //edit function
     edit.addEventListener("click",function(){
       var editing=prompt("you edit it",out.textContent);
       out.innerHTML=editing;
-      // diferent work
-      // var currInput=document.createElement("input");
-      // currInput.setAttribute("type","text");
-      // currInput.setAttribute("class","in");
-      // var currInputText=edit.previousElementSibling.textContent;
-      // currInput.value=currInputText;
-      // edit.parentElement.replaceChild(currInput,edit.previousElementSibling);
     });
     input.value="";
   }
 }
+
